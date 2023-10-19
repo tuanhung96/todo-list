@@ -14,13 +14,16 @@ button.addEventListener("click", () => {
     li.appendChild(span);
   }
   inputBox.value = "";
+  saveDate();
 });
 
 listContainer.addEventListener("click", (e) => {
   if (e.target.tagName === "LI") {
     e.target.classList.toggle("checked");
+    saveDate();
   } else if (e.target.tagName === "SPAN") {
     e.target.parentElement.remove();
+    saveDate();
   }
 });
 
@@ -31,3 +34,5 @@ function saveDate() {
 function getData() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
+
+getData();
