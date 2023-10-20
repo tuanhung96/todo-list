@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   /* width: 100vw; */
   height: 100vh;
   background-color: aqua;
@@ -30,7 +30,7 @@
   justify-content: center;
 }
 
-.row {
+.input-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,7 +63,6 @@ ul li {
   font-size: 1rem;
   padding: 1rem 3rem;
   cursor: pointer;
-  /* user-select: none; */
 }
 
 ul li::before {
