@@ -14,7 +14,7 @@ button.addEventListener("click", () => {
     li.appendChild(span);
   }
   inputBox.value = "";
-  saveDate();
+  saveData();
 });
 
 listContainer.addEventListener("click", (e) => {
@@ -27,7 +27,7 @@ listContainer.addEventListener("click", (e) => {
   }
 });
 
-function saveDate() {
+function saveData() {
   localStorage.setItem("data", listContainer.innerHTML);
 }
 
